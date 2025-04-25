@@ -2,6 +2,7 @@ import reactLogo from '@assets/react.svg';
 import viteLogo from '/vite.svg';
 import ExampleComponent from '@components/ExampleComponent/ExampleComponent';
 import '@styles/app.css';
+import { Box, Typography } from '@mui/material';
 
 function IndexPage() {
   return (
@@ -16,6 +17,14 @@ function IndexPage() {
       </div>
       <h1 className="font-fancy">This font is nice.</h1>
       <h2 className="font-fancy">GoCardless!</h2>
+      <Box>
+        <Typography variant="h1">
+          This font is nice
+        </Typography>
+        <Typography variant="monospace">
+          This is some code.
+        </Typography>
+      </Box>
       <div className="card">
         <p>
           Edit <span className="font-fixed">src/App.tsx</span> and save to test HMR

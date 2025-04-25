@@ -1,5 +1,5 @@
 import { describe, it } from 'vitest';
-import { render, screen } from '@testing-library/react'
+import { render, screen } from '@testing-library/react';
 import IndexPage from'./index.page';
 
 describe('IndexPage', () => {
@@ -8,4 +8,4 @@ describe('IndexPage', () => {
     
     screen.debug();
   })
-})
+});

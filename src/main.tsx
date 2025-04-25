@@ -1,8 +1,10 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { ThemeProvider, CssBaseline, AppBar, Toolbar, Button } from '@mui/material';
 import IndexPage from '@pages/index/index.page.tsx';
 import AccountPage from '@pages/account/account.page';
+import theme from './styles/theme/theme.ts';
 import './styles/_global.css';
 
 function render() {
@@ -14,15 +16,22 @@ function render() {
   
   return createRoot(rootEl).render(
     <StrictMode>
-      <BrowserRouter>
-        <nav>
-          <Link to="/">Home</Link> | <Link to="/account">My Account</Link>
-        </nav>
-        <Routes>
-          <Route path="/" element={<IndexPage />} />
-          <Route path="/account" element={<AccountPage />} />
-        </Routes>
-      </BrowserRouter>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <BrowserRouter>
+          <AppBar position="fixed">
+            <Toolbar>
+              <Button color="inherit" component={Link} to="/">Home</Button>
+              <Button color="inherit" component={Link} to="/account">Account</Button>
+            </Toolbar>
+          </AppBar>
+
+          <Routes>
+            <Route path="/" element={<IndexPage />} />
+            <Route path="/account" element={<AccountPage />} />
+          </Routes>
+        </BrowserRouter>
+      </ThemeProvider>
     </StrictMode>,
   )
 }

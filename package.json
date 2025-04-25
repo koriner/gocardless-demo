@@ -13,6 +13,9 @@
     "test": "vitest"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/material": "^7.0.2",
     "@vitejs/plugin-react-swc": "^3.9.0",
     "dotenv": "^16.5.0",
     "prettier": "^3.5.3",
