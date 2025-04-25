@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'Haffer XH';
+  src: url('fonts/HafferXH-SemiBold.woff2') format('woff2'),
+      url('HafferXH-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DM Mono';
+  src: url('fonts/DMMono-Regular.woff2') format('woff2'),
+      url('fonts/DMMono-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Haffer XH';
+  src: url('fonts/HafferXH-Regular.woff2') format('woff2'),
+      url('fonts/HafferXH-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Para';
+  src: url('fonts/ParaCentral-Light.woff2') format('woff2'),
+      url('fonts/ParaCentral-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
