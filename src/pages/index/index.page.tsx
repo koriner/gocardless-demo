@@ -1,41 +1,24 @@
-import reactLogo from '@assets/react.svg';
-import viteLogo from '/vite.svg';
-import ExampleComponent from '@components/ExampleComponent/ExampleComponent';
+import { Box, Typography } from '@mui/material'; 
 import '@styles/app.css';
-import { Box, Typography } from '@mui/material';
 
 function IndexPage() {
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank" rel="noreferrer">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank" rel="noreferrer">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1 className="font-fancy">This font is nice.</h1>
-      <h2 className="font-fancy">GoCardless!</h2>
-      <Box>
-        <Typography variant="h1">
-          This font is nice
+      <Box pt={4}>
+        <Typography
+          component="h2"
+          variant="h1"
+          sx={{
+            fontSize: '2rem',
+          }}
+        >
+          Welcome to GoCardless SimpleDebit
         </Typography>
-        <Typography variant="monospace">
-          This is some code.
+        <br />
+        <Typography variant="body1">
+          Check out the "Payouts" screen for transactions.
         </Typography>
       </Box>
-      <div className="card">
-        <p>
-          Edit <span className="font-fixed">src/App.tsx</span> and save to test HMR
-        </p>
-        <p>
-          Example ENV var is: <span className="font-fixed">{`${import.meta.env.VITE_EXAMPLE_ENV_VAR}`}</span>
-        </p>
-        {
-          <ExampleComponent label="Test label" />
-        }
-      </div>
     </>
   )
 }
